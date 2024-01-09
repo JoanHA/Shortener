@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Link available{% endblock title %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4 is-offset-4">
+        <div class="tags has-addons">
+          links
+
+          {% comment %} <a href="{% url "core:redirect" code=object.code %}" class="tag is-large">{{request.META.HTTP_HOST}}</a>
+          <span class="tag is-info is-large">{{object.code}}</span> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</section>
+{% comment %} <script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+      datasets: [{
+        label: 'Redirecciones',
+        backgroundColor: 'rgb(32, 156, 238)',
+        borderColor: 'rgb(32, 156, 238)',
+        data: ["{{month}}", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }]
+    },
+    options: {}
+  })
+</script> {% endcomment %}
+{% endblock content %}
