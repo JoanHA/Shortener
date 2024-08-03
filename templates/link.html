@@ -6,11 +6,15 @@
   <div class="container">
     <div class="columns">
       <div class="column is-4 is-offset-4">
-        <div class="tags has-addons">
+     
+        <div class="tags has-addons" style="text-align: center;">
           <a href="{% url "core:redirect" code=object.code %}" class="tag is-large">{{request.META.HTTP_HOST}}</a>
           <span class="tag is-info is-large">{{object.code}}</span>
         </div>
       </div>
+    </div>
+    <div style="text-align: center;">
+      <h1 >Recarga la pagina y mira cuantas veces has sido redigido</h1>
     </div>
     <div class="box">
       <canvas id="myChart"></canvas>
